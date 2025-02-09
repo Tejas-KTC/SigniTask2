@@ -27,4 +27,8 @@ public class UserRepository {
     public void insert(UserData user) {
         executorService.execute(() -> userDao.insert(user));  // ✅ Insert in background
     }
+
+    public void delete(UserData user) {
+        executorService.execute(() -> userDao.delete(user));  // ✅ Insert in background
+    }
 }

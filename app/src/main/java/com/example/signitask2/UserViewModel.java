@@ -24,5 +24,9 @@ public class UserViewModel extends AndroidViewModel {
     public void insert(UserData user) {
         repository.insert(user);  // ✅ Now you can call insert()
     }
+
+    public void delete(UserData user) {
+        repository.delete(user);  // ✅ Now you can call insert()
+    }
 }
 
